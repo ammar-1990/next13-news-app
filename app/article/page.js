@@ -6,10 +6,10 @@ const ArticlePage = ({ searchParams }) => {
 
 
 
-  if ((searchParams && Object.entries(searchParams).length === 0) || !searchParams)
-    {
-        return notFound()
-    }
+  // if ((searchParams && Object.entries(searchParams).length === 0) || !searchParams)
+  //   {
+  //       return notFound()
+  //   }
   
 
     const article = searchParams
