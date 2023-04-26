@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .nav {
-  @apply m-2 capitalize font-semibold duration-150 hover:scale-105 hover:underline underline-offset-8 decoration-orange-400 decoration-2 text-xs min-w-[75px] flex-1
+  @apply m-2 capitalize font-semibold duration-150 hover:scale-125 hover:underline underline-offset-8 decoration-orange-400 decoration-2 text-xs min-w-[75px] flex-1
 }

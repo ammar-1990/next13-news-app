@@ -1,4 +1,6 @@
+import LiveTimeStamp from "./LiveTimeStamp";
 import ReadMoreButton from "./ReadMoreButton";
+
 
 const Article = ({
   author,
@@ -13,7 +15,7 @@ const Article = ({
   published_at,
 }) => {
   return (
-    <article className=" rounded-lg hover:scale-105 shadow-sm hover:shadow-lg bg-slate-100 gove:bg-slate-200 duration-200 ease-out flex flex-col dark:bg-slate-800">
+    <article className="hover:bg-gray-200 rounded-lg hover:scale-105 shadow-md shadow-zinc-400 hover:shadow-zinc-600 dark:shadow-none hover:shadow-lg bg-slate-100 gove:bg-slate-200 duration-200 ease-out flex flex-col dark:bg-slate-800">
       {image && (
         <img src={image} className="w-full rounded-t-lg h-56 object-cover" />
       )}
@@ -24,7 +26,10 @@ const Article = ({
       </section>
       <footer className="mt-auto text-xs dark:text-gray-400 text-gray-700 pt-8 flex space-x-2 justify-end">
         <p>{source}</p>
-        <p>{published_at}</p>
+        <p>
+          
+         <LiveTimeStamp time={published_at}  />
+          </p>
       </footer>
   
       </div>
